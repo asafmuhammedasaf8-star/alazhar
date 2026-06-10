@@ -34,6 +34,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     'Digital Electronics',
     'C Programming',
     'C++ Programming',
+    'Java',
   ];
 
   @override
