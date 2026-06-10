@@ -44,7 +44,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     _confirmPasswordController.dispose();
     super.dispose();
   }
-
+print("ufjscjsc");
   // ─── FIREBASE REGISTER ───────────────────────────────────────────
   Future<void> _register() async {
     if (!_formKey.currentState!.validate()) return;
