@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "270696272540",
+    "project_id": "alazharnew-bdafa",
+    "storage_bucket": "alazharnew-bdafa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270696272540:android:3d9c4dd75a2b6da57ad359",
+        "android_client_info": {
+          "package_name": "com.example.alazhar_new"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2f5yxEJCFnTM4UNSxN0KD4lcpTZ9PUOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
