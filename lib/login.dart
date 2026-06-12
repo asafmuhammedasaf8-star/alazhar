@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'registrationScreen.dart';
 import 'studentScreen.dart';
 import 'teachersScreen.dart';
@@ -52,6 +53,10 @@ class _LoginPageState extends State<LoginPage> {
           .doc(credential.user!.uid)
           .get();
       final role = doc.data()?['role'];
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString('uid', credential.user!.uid);
+      await prefs.setString('role', role ?? 'student');
+      await prefs.setBool('isLoggedIn', true);
 
       if (!mounted) return;
       if (role == 'teacher') {
